@@ -14,5 +14,8 @@ You can also clone this project and build the App to your iOS devices with Xcode
 | --- | --- |
 | ![](.readme/IMG_9163.jpg) | ![](.readme/IMG_9164.jpg) |
 
+# Contribute
+[Submit an Issue](https://github.com/RayPS/Foo-Screen/issues) to contribute ideas or request features
+
 # License
 Licensed under [ROL](http://git.io/read-only-license)
