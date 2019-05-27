@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO">
-                                    <dataDetectorTypes key="dataDetectorTypes"/>
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
@@ -49,12 +49,21 @@
                                                         <action selector="go:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="LMT-n0-wON"/>
                                                     </connections>
                                                 </textField>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LM3-DS-Y5T">
+                                                    <rect key="frame" x="0.0" y="44" width="414" height="2"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="LnS-4c-gkT"/>
+                                                    </constraints>
+                                                </progressView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstItem="LM3-DS-Y5T" firstAttribute="top" secondItem="AwA-YQ-7K9" secondAttribute="bottom" constant="6" id="7qJ-Mm-ZgQ"/>
                                                 <constraint firstAttribute="height" constant="46" id="KcV-rL-2Rg"/>
+                                                <constraint firstAttribute="trailing" secondItem="LM3-DS-Y5T" secondAttribute="trailing" id="Mqr-Yu-nLm"/>
                                                 <constraint firstItem="lPt-CI-MBz" firstAttribute="trailing" secondItem="AwA-YQ-7K9" secondAttribute="trailing" constant="8" id="V7M-fW-lZj"/>
                                                 <constraint firstItem="AwA-YQ-7K9" firstAttribute="top" secondItem="bDd-g1-DBz" secondAttribute="top" constant="8" id="ooM-sd-Sd0"/>
+                                                <constraint firstItem="LM3-DS-Y5T" firstAttribute="leading" secondItem="bDd-g1-DBz" secondAttribute="leading" id="q9m-8D-QQJ"/>
                                                 <constraint firstItem="AwA-YQ-7K9" firstAttribute="leading" secondItem="lPt-CI-MBz" secondAttribute="leading" constant="8" id="zbf-o0-976"/>
                                             </constraints>
                                             <viewLayoutGuide key="safeArea" id="lPt-CI-MBz"/>
@@ -126,6 +135,7 @@
                         <outlet property="addressUrlField" destination="AwA-YQ-7K9" id="558-fx-qbB"/>
                         <outlet property="controlsView" destination="Eld-YX-BtY" id="l7c-Il-TYo"/>
                         <outlet property="historyTableView" destination="KVD-TP-UaQ" id="ITm-3t-6oq"/>
+                        <outlet property="progressBar" destination="LM3-DS-Y5T" id="7Wh-HV-ICg"/>
                         <outlet property="webView" destination="QZr-pu-dI6" id="mcv-Eh-mRH"/>
                     </connections>
                 </viewController>
